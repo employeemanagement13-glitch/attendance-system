@@ -99,7 +99,7 @@ export function Sidebar() {
             initial={false}
             animate={{ width: collapsed ? 80 : 256 }}
             className={cn(
-                "relative flex flex-col h-full bg-card border-r border-sidebar-border shadow-[4px_0_24px_rgba(0,0,0,0.02)]",
+                "relative flex bg-white flex-col h-full border-r border-sidebar-border shadow-[4px_0_24px_rgba(0,0,0,0.02)]",
                 // Ensure Sidebar takes full width on its mobile container
                 "w-full lg:w-auto"
             )}
