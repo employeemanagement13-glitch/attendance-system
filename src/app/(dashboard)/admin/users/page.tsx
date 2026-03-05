@@ -318,13 +318,13 @@ export default function UserManagementPage() {
                 <h1 className="text-3xl font-bold tracking-tight">User Management</h1>
 
                 <Tabs defaultValue="students" className="w-full" onValueChange={(v) => setCurrentTab(v as any)}>
-                    <div className="flex items-center justify-between">
+                    <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
                         <TabsList className="grid w-full grid-cols-2 max-w-[400px]">
                             <TabsTrigger value="students">Students</TabsTrigger>
                             <TabsTrigger value="instructors">Instructors</TabsTrigger>
                         </TabsList>
 
-                        <div className="flex gap-2">
+                        <div className="flex flex-wrap items-center gap-2">
                             <div className="relative">
                                 <Input
                                     type="file"
@@ -337,17 +337,17 @@ export default function UserManagementPage() {
                                         }
                                     }}
                                 />
-                                <Button className="bg-[#FF8020] hover:bg-[#FF8020]/90 text-white cursor-pointer">
-                                    <Upload className="mr-2 h-4 w-4" /> Bulk Import
+                                <Button className="bg-[#FF8020] hover:bg-[#FF8020]/90 text-white cursor-pointer w-full sm:w-auto">
+                                    <Upload className="mr-2 h-4 w-4" /> <span className="sm:inline">Bulk Import</span><span className="inline sm:hidden">Import</span>
                                 </Button>
                             </div>
-                            <Button onClick={exportData} variant="outline" className="cursor-pointer">
-                                <Download className="mr-2 h-4 w-4" /> Export
+                            <Button onClick={exportData} variant="outline" className="cursor-pointer w-full sm:w-auto">
+                                <Download className="mr-2 h-4 w-4" /> <span className="sm:inline">Export</span>
                             </Button>
                             <Dialog open={dialogOpen} onOpenChange={setDialogOpen}>
                                 <DialogTrigger asChild>
                                     <Button
-                                        className="bg-[#FF8020] hover:bg-[#FF8020]/90 text-white cursor-pointer"
+                                        className="bg-[#FF8020] hover:bg-[#FF8020]/90 text-white cursor-pointer w-full sm:w-auto"
                                         onClick={() => {
                                             setEditingUser(null);
                                             setFormData({
@@ -361,7 +361,7 @@ export default function UserManagementPage() {
                                             });
                                         }}
                                     >
-                                        <Plus className="mr-2 h-4 w-4" /> Add New
+                                        <Plus className="mr-2 h-4 w-4" /> <span className="sm:inline">Add New</span><span className="inline sm:hidden">Add</span>
                                     </Button>
                                 </DialogTrigger>
                                 <DialogContent className="sm:max-w-[500px]">
