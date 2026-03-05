@@ -1,0 +1,82 @@
+﻿
+> attendance-system@0.1.0 build
+> next build
+
+Γû▓ Next.js 16.1.1 (Turbopack)
+- Environments: .env.local
+
+  Creating an optimized production build ...
+Γ£ô Compiled successfully in 48s
+  Running TypeScript ...
+node.exe : Failed to 
+compile.
+At line:1 char:1
++ & "C:\Program Files
+\nodejs/node.exe" 
+"C:\Program 
+Files\nodejs/node_mo 
+...
++ ~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~
+    + CategoryInfo   
+           : NotSpe  
+  cified: (Failed    
+ to compile.:Stri    
+ng) [], RemoteEx    
+ception
+    + FullyQualified 
+   ErrorId : Native  
+  CommandError
+ 
+
+./src/app/(dashboard)
+/admin/resources/page
+.tsx:228:41
+Type error: Cannot 
+find name 
+'setUploadingFile'.
+
+[0m [90m 226 
+|[39m               
+                     
+     setDialogOpen([
+36mfalse[39m)[33m;
+[39m
+ [90m 227 |[39m    
+                     
+                
+setFormData({ 
+name[33m:[39m [32m
+""[39m[33m,[39m 
+course_id[33m:[39m 
+[32m""[39m[33m,[3
+9m description[33m:
+[39m [32m""[39m 
+})[33m;[39m
+[31m[1m>[22m[39m
+[90m 228 |[39m      
+                     
+              setUplo
+adingFile([36mnull[
+39m)[33m;[39m
+ [90m     |[39m    
+                     
+                
+[31m[1m^[22m[39m
+ [90m 229 |[39m    
+                     
+            }}
+ [90m 230 |[39m    
+                     
+            className
+[33m=[39m[32m"curs
+or-pointer"[39m
+ [90m 231 |[39m    
+                     
+        
+[33m>[39m[0m
+Next.js build worker 
+exited with code: 1 
+and signal: null

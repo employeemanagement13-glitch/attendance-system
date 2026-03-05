@@ -1,0 +1,81 @@
+﻿
+> attendance-system@0.1.0 build
+> next build
+
+Γû▓ Next.js 16.1.1 (Turbopack)
+- Environments: .env.local
+
+  Creating an optimized production build ...
+Γ£ô Compiled successfully in 43s
+  Running TypeScript ...
+node.exe : Failed to 
+compile.
+At line:1 char:1
++ & "C:\Program Files
+\nodejs/node.exe" 
+"C:\Program 
+Files\nodejs/node_mo 
+...
++ ~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~
+    + CategoryInfo   
+           : NotSpe  
+  cified: (Failed    
+ to compile.:Stri    
+ng) [], RemoteEx    
+ception
+    + FullyQualified 
+   ErrorId : Native  
+  CommandError
+ 
+
+./src/app/(dashboard)
+/admin/resources/page
+.tsx:65:36
+Type error: This 
+expression is not 
+callable.
+  Type 'File' has no 
+call signatures.
+
+[0m [90m 63 |[39m 
+        
+[36mtry[39m {
+ [90m 64 |[39m     
+        [90m// 
+Upload file to 
+Supabase Storage[39m
+[31m[1m>[22m[39m
+[90m 65 |[39m       
+      
+[36mconst[39m 
+filePath [33m=[39m 
+[36mawait[39m uploa
+dFile(uploadFile[33m
+,[39m [32m"resource
+s"[39m[33m,[39m fo
+rmData[33m.[39mcour
+se_id [33m?[39m [3
+2m`course_${formData.
+course_id}`[39m 
+[33m:[39m [32m"gen
+eral"[39m)[33m;[39
+m
+ [90m    |[39m     
+                     
+          
+[31m[1m^[22m[39m
+ [90m 66 |[39m
+ [90m 67 |[39m     
+        [36mif[39m 
+([33m![39mfilePath)
+ {
+ [90m 68 |[39m     
+            [36mretu
+rn[39m[33m;[39m[0
+m
+Next.js build worker 
+exited with code: 1 
+and signal: null

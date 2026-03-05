@@ -1,0 +1,41 @@
+{
+  "enrollments": {
+    "id": "a5ecfd5e-7122-4b62-82e4-b810dce73bb8",
+    "student_id": "c48f2f76-6720-48d2-a9e5-27abbc0f8982",
+    "course_id": "cce4948b-7ae7-42ef-b8f3-d28f8a067fe0",
+    "semester": 1,
+    "section": null,
+    "status": "enrolled",
+    "enrolled_at": "2026-03-02T17:44:59.318445+00:00"
+  },
+  "notifications": [
+    {
+      "id": "300709ee-0293-47d9-ab9c-7f73d5e9c734",
+      "title": "Alert for everyone",
+      "message": "War started",
+      "type": "alert",
+      "status": "read",
+      "target_role": null,
+      "target_user_id": null,
+      "related_entity_type": null,
+      "related_entity_id": null,
+      "link": null,
+      "created_by": null,
+      "created_at": "2026-03-05T05:48:16.058348+00:00"
+    },
+    {
+      "id": "83edfa17-0f0d-47ad-ae67-e734ed6c1d84",
+      "title": "Invading Army Now",
+      "message": "All students instruct to invade army now",
+      "type": "alert",
+      "status": "read",
+      "target_role": null,
+      "target_user_id": null,
+      "related_entity_type": null,
+      "related_entity_id": null,
+      "link": null,
+      "created_by": null,
+      "created_at": "2026-03-04T17:14:02.818134+00:00"
+    }
+  ]
+}
