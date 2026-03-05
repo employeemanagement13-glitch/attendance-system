@@ -205,7 +205,7 @@ export default function StudentSchedulePage() {
                                         <Card
                                             key={date}
                                             className={cn(
-                                                "h-full border-none shadow-sm transition-all duration-300",
+                                                "h-full border-none max-md:border-black shadow-sm transition-all duration-300",
                                                 isToday ? "ring-2 ring-[#FF8020] bg-orange-50/20" : "bg-white/50"
                                             )}
                                         >
