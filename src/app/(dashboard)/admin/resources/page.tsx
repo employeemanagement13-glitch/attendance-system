@@ -300,7 +300,7 @@ export default function ResourcesPage() {
                                 </div>
                                 <div className="grid gap-2">
                                     <Label htmlFor="course">Course</Label>
-                                    <Select value={formData.course_id || "none"} onValueChange={(value) => setFormData({ ...formData, course_id: value })}>
+                                    <Select value={formData.course_id || "none"} onValueChange={(value) => setFormData({ ...formData, course_id: value })} className="bg-white">
                                         <SelectTrigger>
                                             <SelectValue placeholder="Select course" />
                                         </SelectTrigger>
@@ -315,7 +315,7 @@ export default function ResourcesPage() {
                                 {(!formData.course_id || formData.course_id === "none") && (
                                     <div className="grid gap-2">
                                         <Label htmlFor="visibility">Visibility / Audience</Label>
-                                        <Select value={formData.visibility} onValueChange={(value) => setFormData({ ...formData, visibility: value })}>
+                                        <Select value={formData.visibility} onValueChange={(value) => setFormData({ ...formData, visibility: value })} className="bg-white">
                                             <SelectTrigger>
                                                 <SelectValue placeholder="Select visibility" />
                                             </SelectTrigger>
